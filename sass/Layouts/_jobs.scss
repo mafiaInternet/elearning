@@ -1,0 +1,22 @@
+.jobs {
+    background-color: $color-white-1;
+    .jobs__content {
+        .jobs__item {
+            max-width: 450px;
+            margin: 0 auto;
+            text-align: center;
+            padding: $pd-3;
+            h2 {
+                @include styleText($color-black-light, $fs-3 + 1, $fw-1);
+            }
+        }
+        .row {
+            padding: $pd-0 0;
+        }
+    }
+    @include reponsive("medium") {
+        .border-right {
+            border-right: none!important;
+        }
+    }
+}

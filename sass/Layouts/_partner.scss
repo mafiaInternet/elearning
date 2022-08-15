@@ -1,0 +1,38 @@
+.partner {
+    padding: $pd-3 0;
+    background-color: $color-white-1;
+    .partner__content {
+        width: 70%;
+        margin: 0 auto;
+        .partner__text {
+            text-align: center;
+        }
+        .partner__img {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    @include reponsive("extra-large") {
+        .partner__content {
+            width: 80%;
+        }
+    }
+    @include reponsive("large") {
+        .partner__content {
+            width: 90%;
+        }
+    }
+    @include reponsive ("medium") {
+        .partner__content {
+            width: 60%;
+            .partner__img {
+                flex-wrap: wrap;
+                .partner__item {
+                    width: 50%;
+                    text-align: center;
+                    margin-bottom: $mg-0 + 5;
+                }
+            }
+        }
+    }
+}
